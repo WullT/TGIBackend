@@ -5,8 +5,8 @@ services:
     image: influxdb:1.8.10
     container_name: influxdb
     restart: always
-    ports:
-      - "8086:8086"
+#    ports:
+#      - "8086:8086"
     environment:
       - INFLUXDB_REPORTING_DISABLED=true
       - INFLUXDB_ADMIN_ENABLED=true
