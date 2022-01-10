@@ -1,0 +1,8 @@
+user admin
+topic readwrite #
+
+user wuser
+topic write data/#
+
+user ruser
+topic read #
