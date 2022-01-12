@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>LoRa Node Configuration</title>
+    <title>&#9881;LoRa Node Configuration</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,7 +10,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
-        <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/mitwelten/mitwelten.github.io/master/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://raw.githubusercontent.com/mitwelten/mitwelten.github.io/master/favicon.ico">
 </head>
 
 <body onload="toggleLoRaAct();">
@@ -69,7 +70,7 @@
                                 <div class="col-12">
                                     <select class="form-select" id="activation" onchange="toggleLoRaAct();">
                                         <option selected value="abp">ABP</option>
-                                        <option  value="otaa">OTAA</option>
+                                        <option value="otaa">OTAA</option>
                                     </select>
                                 </div>
                             </div><br>
@@ -78,7 +79,7 @@
                             <p><strong>ABP</strong></p>
                             <div class="form-group row">
                                 <label class="col-12 col-form-label">Device
-                                        address</label>
+                                    address</label>
                                 <div class="col-12">
                                     <input id="deviceaddress" name="deviceaddress" type="text" maxlength="100"
                                         placeholder="01234567" value="" class="form-control input-md text-monospace"
@@ -219,7 +220,7 @@
                             <div class="form-group row">
                                 <div class="col-md-3">
                                     <input class="form-check-input" type="checkbox" value="" id="has_ds18b20"
-                                    onchange="document.getElementById('ds18b20_pin').disabled = !document.getElementById('has_ds18b20').checked;">
+                                        onchange="document.getElementById('ds18b20_pin').disabled = !document.getElementById('has_ds18b20').checked;">
 
                                     <label class="form-check-label">DS18B20 Temperature Sensor</label>
                                 </div>
@@ -239,7 +240,7 @@
                             <div class="form-group row">
                                 <div class="col-md-3">
                                     <input class="form-check-input" type="checkbox" value="" id="has_mc_gas_sensor"
-                                    onchange="document.getElementById('mc_gas_i2c_addr').disabled = !document.getElementById('has_mc_gas_sensor').checked;">
+                                        onchange="document.getElementById('mc_gas_i2c_addr').disabled = !document.getElementById('has_mc_gas_sensor').checked;">
 
                                     <label class="form-check-label">Gas Sensor V2(Multichannel)</label>
                                 </div>
@@ -250,7 +251,8 @@
                                 <div class="col-md-6 ">
                                     <div class="input-group md-6">
                                         <span class="input-group-text">I2C Address</span>
-                                        <input type="text" id="mc_gas_i2c_addr" class="form-control" value="0x08" disabled>
+                                        <input type="text" id="mc_gas_i2c_addr" class="form-control" value="0x08"
+                                            disabled>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +261,7 @@
                             <div class="form-group row">
                                 <div class="col-md-3">
                                     <input class="form-check-input" type="checkbox" value="" id="has_sunlight_sensor"
-                                    onchange="document.getElementById('sunlight_sensor_pin').disabled = !document.getElementById('has_sunlight_sensor').checked;">
+                                        onchange="document.getElementById('sunlight_sensor_pin').disabled = !document.getElementById('has_sunlight_sensor').checked;">
 
                                     <label class="form-check-label">SI1145 Sunight Sensor</label>
                                 </div>
@@ -270,7 +272,8 @@
                                 <div class="col-md-6 ">
                                     <div class="input-group md-6">
                                         <span class="input-group-text">Analog Pin</span>
-                                        <input type="text" id="sunlight_sensor_pin" class="form-control" value="A4" disabled>
+                                        <input type="text" id="sunlight_sensor_pin" class="form-control" value="A4"
+                                            disabled>
                                     </div>
                                 </div>
                             </div>
@@ -279,7 +282,7 @@
                             <div class="form-group row">
                                 <div class="col-md-3">
                                     <input class="form-check-input" type="checkbox" value="" id="has_turbidity_sensor"
-                                    onchange="document.getElementById('turbidity_sensor_pin').disabled = !document.getElementById('has_turbidity_sensor').checked;">
+                                        onchange="document.getElementById('turbidity_sensor_pin').disabled = !document.getElementById('has_turbidity_sensor').checked;">
 
                                     <label class="form-check-label">Turbidity Sensor Meter v1.0</label>
                                 </div>
@@ -290,7 +293,8 @@
                                 <div class="col-md-6 ">
                                     <div class="input-group md-6">
                                         <span class="input-group-text">Analog Pin</span>
-                                        <input type="text" id="turbidity_sensor_pin" class="form-control" value="A0" disabled>
+                                        <input type="text" id="turbidity_sensor_pin" class="form-control" value="A0"
+                                            disabled>
                                     </div>
                                 </div>
                             </div>
@@ -299,7 +303,7 @@
                             <div class="form-group row">
                                 <div class="col-md-3">
                                     <input class="form-check-input" type="checkbox" value="" id="has_sound_sensor"
-                                    onchange="document.getElementById('sound_sensor_pin').disabled = !document.getElementById('has_sound_sensor').checked;">
+                                        onchange="document.getElementById('sound_sensor_pin').disabled = !document.getElementById('has_sound_sensor').checked;">
 
                                     <label class="form-check-label">Sound Sensor</label>
                                 </div>
@@ -310,7 +314,8 @@
                                 <div class="col-md-6 ">
                                     <div class="input-group md-6">
                                         <span class="input-group-text">Analog Pin</span>
-                                        <input type="text" id="sound_sensor_pin" class="form-control" value="A2" disabled>
+                                        <input type="text" id="sound_sensor_pin" class="form-control" value="A2"
+                                            disabled>
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +370,8 @@
                             <div class="col-10">
                                 <textarea class="form-control text-monospace" name="aclPublish" id="configOutput"
                                     maxlength="2000" rows="10"
-                                    style="margin-top: 0px; margin-bottom: 0px; height: 200px;" disabled>click Generate</textarea>
+                                    style="margin-top: 0px; margin-bottom: 0px; height: 200px;"
+                                    disabled>click Generate</textarea>
                             </div>
 
                             <div class="col-2">
@@ -387,26 +393,26 @@
 
     <script>
 
-        function toggleLoRaAct(){
+        function toggleLoRaAct() {
             let actopt = document.getElementById("activation").selectedIndex;
             console.log(actopt);
 
-               if (actopt == 0) {
+            if (actopt == 0) {
                 document.getElementById('deviceaddress').disabled = false;
                 document.getElementById('appskey').disabled = false;
                 document.getElementById('nwkskey').disabled = false;
                 document.getElementById('appeui').disabled = true;
                 document.getElementById('deveui').disabled = true;
                 document.getElementById('appkey').disabled = true;
-                } else {
+            } else {
                 document.getElementById('deviceaddress').disabled = true;
                 document.getElementById('appskey').disabled = true;
                 document.getElementById('nwkskey').disabled = true;
                 document.getElementById('appeui').disabled = false;
                 document.getElementById('deveui').disabled = false;
                 document.getElementById('appkey').disabled = false;
-                    
-                }
+
+            }
         }
 
         function validateHexInput(hexnr, length) {
@@ -460,7 +466,7 @@
 
             let has_distance_sensor = document.getElementById("has_distance_sensor").checked;
 
-            if(actopt==0){
+            if (actopt == 0) {
                 if (!validateHexInput(deviceaddr, 8)) {
                     alert("Device address not valid!");
                     valid = false;
@@ -477,7 +483,7 @@
                     valid = false;
                     return NaN;
                 }
-            }else{
+            } else {
                 if (!validateHexInput(appeui, 16)) {
                     alert("AppEUI  not valid!");
                     valid = false;
@@ -502,17 +508,17 @@
             text += d;
             text += "\n\n"
             text += "# Connectivity"
-            text += "\nuse_otaa = "
-            if (actopt == 0 ){
-                text+="false"
+            text += "\nactivation = "
+            if (actopt == 0) {
+                text += "abp"
                 text += "\ndevice_address="
                 text += deviceaddr;
                 text += "\nnwkskey="
                 text += nwkskey;
                 text += "\nappskey="
                 text += appskey;
-            }else{
-                text+="true"
+            } else {
+                text += "otaa"
                 text += "\nappeui="
                 text += appeui;
                 text += "\ndeveui="
@@ -560,7 +566,7 @@
                 text += "\nsunlight_sensor_pin="
                 text += sunlight_sensor_pin
                 used_pins.push(sunlight_sensor_pin);
-                
+
             }
 
             if (has_turbidity_sensor) {
@@ -585,7 +591,7 @@
 
             let findDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) != index)
             let duplicates = findDuplicates(used_pins);
-            if(duplicates.length>0){
+            if (duplicates.length > 0) {
                 var alertmsg = "Pin ";
                 alertmsg += duplicates[0];
                 alertmsg += " defined multiple times."
@@ -593,10 +599,10 @@
                 valid = false;
             }
 
-            if(valid){
-            document.getElementById('configOutput').setAttribute("disabled", "disabled");
-            document.getElementById("configOutput").innerHTML = text;
-            document.getElementById("downloadbutton").removeAttribute("disabled");
+            if (valid) {
+                document.getElementById('configOutput').setAttribute("disabled", "disabled");
+                document.getElementById("configOutput").innerHTML = text;
+                document.getElementById("downloadbutton").removeAttribute("disabled");
             }
 
         }
