@@ -71,8 +71,9 @@ Consists of [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/
     docker-compose restart
     ```
 
+> If you want to access Grafana and the MQTT Broker over the internet, you can use a secure tunnel like [Yaler](https://yaler.net/), [Pagekite](https://pagekite.net/) or [ngrok](https://ngrok.com/)
 
-## Configuration
+## Setup Grafana
 
->todo...
+
 
