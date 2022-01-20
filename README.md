@@ -60,11 +60,17 @@ Consists of [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/
 
 - Update Mosquitto user credentials
   - Generate passwords for `admin` and `wuser` (you have already defined a password for `ruser` in step *Update `telegraf.conf`*) 
-```sh
-docker-compose exec mosquitto mosquitto_passwd -b /mosquitto/config/password.txt admin ADMIN_PASSWORD
-docker-compose exec mosquitto mosquitto_passwd -b /mosquitto/config/password.txt ruser RUSER_PASSWORD
-docker-compose exec mosquitto mosquitto_passwd -b /mosquitto/config/password.txt wuser WUSER_PASSWORD
-```
+    ```sh
+    docker-compose exec mosquitto mosquitto_passwd -b /mosquitto/config/password.txt admin ADMIN_PASSWORD
+    docker-compose exec mosquitto mosquitto_passwd -b /mosquitto/config/password.txt ruser RUSER_PASSWORD
+    docker-compose exec mosquitto mosquitto_passwd -b /mosquitto/config/password.txt wuser WUSER_PASSWORD
+    ```
+- Restart the applications
+    ```sh
+    cd ~/TGIBackend/docker
+    docker-compose restart
+    ```
+
 
 ## Configuration
 
