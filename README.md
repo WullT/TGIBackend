@@ -11,7 +11,7 @@ Consists of [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/
     git clone https://github.com/WullT/TGIBackend.git
     ```
 
-- Install Docker and Docker-Compose
+- Install Docker and Docker-Compose (this may take a while)
     ```sh
     sh ~/TGIBackend/scripts/install_docker_and_dc.sh
     ```
@@ -51,7 +51,7 @@ Consists of [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/
     `[[inputs.mqtt_consumer]]`(first)|password|TTN MQTT Integration password (API Key)
     `[[inputs.mqtt_consumer]]`(second)|username|Local MQTT ruser username (choose one)
     `[[inputs.mqtt_consumer]]`(second)|password|Local MQTT ruser password (choose one)
-
+- Reboot
 - Run the applications
     ```sh
     cd ~/TGIBackend/docker
@@ -74,6 +74,17 @@ Consists of [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/
 > If you want to access Grafana and the MQTT Broker over the internet, you can use a secure tunnel like [Yaler](https://yaler.net/), [Pagekite](https://pagekite.net/) or [ngrok](https://ngrok.com/)
 
 ## Setup Grafana
+
+- Open a webbrowser and go to `http://<your-backend-host-ip>:3000`
+- Login with your Grafana admin credentials
+- Go to Configuration &rarr; Data sources &rarr; Add data source
+  - Select InfluxDB
+  - Set `URL` to `http://influxdb:8086`
+  - In the section *InfluxDB Details*, enter the database name (`INFLUXDB_DB`) and the credentials for InfluxDB Read User (`INFLUXDB_READ_USER`, `INFLUXDB_READ_USER_PASSWORD`)
+  - Click *Save & test*
+
+
+
 
 
 
